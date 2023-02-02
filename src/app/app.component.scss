@@ -16,25 +16,26 @@
         font-family: l;
     }
 
-    .content {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        background: #000;
-        padding-left: 15px;
-        color: aliceblue;
-        border-top-left-radius: 5px;
-        padding: 10px;
-        font-family: rwl;
-        display: flex;
 
-        .line {
-            height: 25px;
-            width: 3px;
-            background: hsl(185, 100%, 50%);
-            border-radius: 5px;
-            animation: hued 1s linear infinite alternate;
-        }
+}
+.content {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    padding-left: 15px;
+    color: aliceblue;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    font-family: rwl;
+    display: flex;
 
+    .line {
+        height: 25px;
+        width: 3px;
+        background: hsl(185, 100%, 50%);
+        border-radius: 5px;
+        animation: hued 1s linear infinite alternate;
     }
+
 }

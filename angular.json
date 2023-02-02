@@ -35,8 +35,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "source/css/icons.min.css",
               "source/css/app.min.css",
-              "node_modules/apexcharts/dist/apexcharts.css",
-              "source/icons/js/pro.js"
+              "node_modules/apexcharts/dist/apexcharts.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -47,7 +46,8 @@
               "source/js/pages/plugins/lord-icon-2.1.0.js",
               "source/js/plugins.js",
               "node_modules/apexcharts/dist/apexcharts.min.js",
-              "source/js/app.js"
+              "source/js/app.js",
+              "source/icons/js/pro.js"
             ]
           },
           "configurations": {

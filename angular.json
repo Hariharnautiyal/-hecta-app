@@ -36,9 +36,14 @@
               "source/css/icons.min.css",
               "source/css/app.min.css",
               "node_modules/apexcharts/dist/apexcharts.css"
+<<<<<<< HEAD
+=======
+              
+>>>>>>> efc6124cf4fe2f0f0a0aec51cd959247b0596041
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
+              "source/icons/js/pro.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "source/libs/simplebar/simplebar.min.js",
               "source/libs/node-waves/waves.min.js",

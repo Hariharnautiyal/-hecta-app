@@ -2,5 +2,3 @@
   command = "ng build --configuration production && ng run hecta:serverless:production"
   publish = "dist/hecta/browser"
 
-[[plugins]]
-  package = "@netlify/plugin-angular-universal"

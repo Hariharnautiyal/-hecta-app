@@ -33,22 +33,13 @@
               "source/icons/css/all.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "source/css/icons.min.css",
-              "source/css/app.min.css",
-              "node_modules/apexcharts/dist/apexcharts.css"
+              "node_modules/apexcharts/dist/apexcharts.css",
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
               "source/icons/js/pro.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "source/libs/simplebar/simplebar.min.js",
-              "source/libs/node-waves/waves.min.js",
-              "source/libs/feather-icons/feather.min.js",
-              "source/js/pages/plugins/lord-icon-2.1.0.js",
-              "source/js/plugins.js",
-              "node_modules/apexcharts/dist/apexcharts.min.js",
-              "source/js/app.js",
-              "source/icons/js/pro.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {

@@ -49,6 +49,10 @@ $hecta-theme: mat.define-light-theme((
   src: url(../source/font/Toxia-OwOA.ttf);
 }
 @font-face {
+  font-family: l;
+  src: url(../source/font/legend.ttf);
+}
+@font-face {
   font-family: pxl;
   src: url(../source/font/Poppins-ExtraLight.ttf);
 }
@@ -60,10 +64,7 @@ $hecta-theme: mat.define-light-theme((
   font-family: robo;
   src: url(../source/font/glitch.ttf);
 }
-@font-face {
-  font-family: l;
-  src: url(../source/font/legend.ttf);
-}
+
 /* You can add global styles to this file, and also import other style files */
 html{
   background: #111;
@@ -180,7 +181,31 @@ opacity: 1;
 transform: rotateY(0deg);
   }
 }
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 html {
   scrollbar-color: ThreeDFace Scrollbar;
+  font-family:rwl;
 }
 

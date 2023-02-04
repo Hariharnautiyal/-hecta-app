@@ -1,6 +1,11 @@
 [build]
-command = "ng build --configuration production && ng run angular-universal:serverless:production"
-publish = "dist/angular-universal/browser"
+  command = "npm run prerender -- --c production && ng run hecta:serverless:production"
+  publish = "dist/project-name/browser"
 
 [[plugins]]
-package = "@netlify/plugin-angular-universal"
+  package = "@netlify/plugin-angular-universal"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"df
+  status = 200

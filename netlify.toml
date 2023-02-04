@@ -3,9 +3,15 @@
   publish = "dist/project-name/browser"
 
 [[plugins]]
+<<<<<<< HEAD
   package = "@netlify/plugin-angular-universal"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+=======
+package = "@netlify/plugin-angular-universal"
+  [plugins.inputs]
+  projectName = "angular-universal"
+>>>>>>> d91046d67f38e16197934dd0edd8efe7bcfdca83

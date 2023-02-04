@@ -1,6 +1,6 @@
 [build]
-  command = "npm run prerender -- --c production && ng run hecta:serverless:production"
-  publish = "dist/project-name/browser"
+  command = "npm run prerender --c production && ng run hecta:serverless:production"
+  publish = "dist/hecta/browser"
 
 [[plugins]]
   package = "@netlify/plugin-angular-universal"
@@ -9,3 +9,5 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[plugins.inputs]
+  projectName = "hecta"

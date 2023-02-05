@@ -4,8 +4,10 @@
 
 [[plugins]]
   package = "@netlify/plugin-angular-universal"
-[plugins.inputs]
-  projectName = "hecta"
+  inputs: {
+  projectName:"hecta"
+  }
+  
 [[redirects]]
   from = "/*"
   to = "/index.html"

@@ -1,9 +1,4 @@
-[build]
-  projectName="hecta"
-  
-[[plugins]]
-  package = "@netlify/plugin-angular-universal"
-  
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

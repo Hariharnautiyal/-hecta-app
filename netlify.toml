@@ -5,9 +5,7 @@
    projectName = "hecta"
 
 [[plugins]]
-  inputs = {
   projectName="hecta"
-  }
   package = "@netlify/plugin-angular-universal"
   
 [[redirects]]

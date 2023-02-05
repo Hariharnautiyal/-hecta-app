@@ -1,7 +1,7 @@
 [build]
   base="/"
-  command = "ng build --configuration production && ng run hecta:serverless:production"
-  publish = "dist/hecta/browser"
+  command = "ng build --configuration production && ng run {projectName}:serverless:production"
+  publish = "dist/{projectName}/browser"
 
 
 [[plugins]]

@@ -1,5 +1,5 @@
 [build]
-  projectName = "hecta"
+  base="/"
   command = "ng build --configuration production && ng run hecta:serverless:production"
   publish = "dist/hecta/browser"
 

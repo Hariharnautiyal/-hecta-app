@@ -4,7 +4,6 @@
 
 [[plugins]]
   package = "@netlify/plugin-angular-universal"
-  inputs: {}
   
 [[redirects]]
   from = "/*"

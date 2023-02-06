@@ -1,0 +1,37 @@
+.card {
+    transform: rotateY(180deg);
+    animation: comp-chg 2s ease-in forwards;
+    border: 0;
+    margin: auto;
+    color: #fff;
+    font-family: rwl;
+    background: #222;
+    opacity: 0;
+    padding: 15px;
+    height: 100%;
+    width:100%;
+
+    .title {
+        font-family: rwl;
+        color: #fff;
+    }
+    .btn{
+        color: #fff;
+
+    }
+    .list-folders{
+        padding: 10px;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        border: 0;
+        margin-bottom: 0.5em;
+        color: #fff;
+    }
+    .back{
+        color: rgb(255, 80, 32);
+        font-family: rwl;
+    }
+    .run{
+        color: rgb(46, 244, 248);
+        font-family: rwl;        
+    }
+}

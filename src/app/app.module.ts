@@ -16,7 +16,11 @@ import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatProgressBarModule} from '@angular/material/progress-bar'; 
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
-import {MatDividerModule} from '@angular/material/divider'
+import {MatDividerModule} from '@angular/material/divider';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { HcService } from './service/hc.service';
+import {FilesMbsComponent} from 'src/app/mbs/files-mbs/files-mbs.component';
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,8 @@ import {MatDividerModule} from '@angular/material/divider'
     CodeComponent,
     WelcomeComponent,
     FilesComponent,
-    DealsComponent
+    DealsComponent,
+    FilesMbsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -40,9 +45,13 @@ import {MatDividerModule} from '@angular/material/divider'
     MatProgressBarModule,
     MatDividerModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatBottomSheetModule,
+    MatListModule
   ],
-  providers: [],
+  providers: [
+    HcService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

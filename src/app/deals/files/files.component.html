@@ -1,1 +1,19 @@
-<p>files works!</p>
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-subtitle class="title">
+            Your Downloads here
+        </mat-card-subtitle>
+        <mat-card-title class="title">
+            Downloads
+        </mat-card-title>
+
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="btn list-folders" (click)="hc.files()">
+        <i class="fa-thin fa-folder mx-2" ></i> Phone
+    </mat-card-content>
+    <mat-card-actions>
+        <button class="btn mx-1 back" mat-button color="warn">Back</button>
+        <button class="btn mx-1 run" mat-button color="primary">Folder</button>
+    </mat-card-actions>
+</mat-card>

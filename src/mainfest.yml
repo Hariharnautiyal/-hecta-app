@@ -1,0 +1,6 @@
+# manifest.yml
+
+name: hecta
+inputs:
+  - name: projectName
+    default: hecta

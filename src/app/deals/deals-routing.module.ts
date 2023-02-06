@@ -4,6 +4,9 @@ import { CodeComponent } from './code/code.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import {FilesComponent} from './files/files.component';
 const routes: Routes = [
+  {
+path:"",redirectTo:"code",pathMatch:'full'
+  },
 {
   path:'code',component:CodeComponent
 },

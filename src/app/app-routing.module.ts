@@ -2,8 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {AdminComponent} from './admin/admin.component';
 import { DealsComponent } from './deals/deals.component';
-
+import {CsComponent} from 'src/app/cs/cs.component';
+import {DealsRoutingModule} from 'src/app/deals/deals-routing.module';
+import { CodeComponent } from './deals/code/code.component';
+import { WelcomeComponent } from './deals/welcome/welcome.component';
+import {FilesComponent} from './deals/files/files.component';
 const routes: Routes = [
+  {
+path:'',redirectTo:'cs',pathMatch:'full'
+  },
   {
     path: 'admin',
     component:AdminComponent,
@@ -12,7 +19,23 @@ const routes: Routes = [
   {
     path: 'deals',
     component:DealsComponent,
-    loadChildren: () => import('./deals/deals.module').then(m => m.DealsModule)
+    children: [
+      {
+    path:"",redirectTo:"code",pathMatch:'full'
+      },
+    {
+      path:'code',component:CodeComponent
+    },
+    {
+      path:'welcome',component:WelcomeComponent
+    },
+    {
+      path:'files',component:FilesComponent
+    }
+    ]
+  },
+  {
+  path:'cs',component:CsComponent
   }
 ];
 

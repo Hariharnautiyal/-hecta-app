@@ -1,5 +1,7 @@
 .code{
     border:0;
+    transform: rotateY(180deg);
+    animation: comp-chg 2s ease-in forwards;
     margin:auto;
     color: #fff;
 font-family:rwl;

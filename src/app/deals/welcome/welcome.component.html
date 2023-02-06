@@ -10,7 +10,7 @@
     </mat-card-header>
     <p>Thanks for puschasing our package.</p>
     <mat-divider></mat-divider>
-    <mat-card-content class="btn list-folders">
+    <mat-card-content class="btn list-folders" (click)="forward()">
         <i class="fa-thin fa-folder mx-2"></i> Downloads
     </mat-card-content>
     <mat-card-content class="btn list-folders">
@@ -20,7 +20,7 @@
         <i class="fa-thin fa-video mx-2"></i> Channel
     </mat-card-content>
     <mat-card-actions>
-        <button class="btn mx-1 back" mat-button color="warn">Back</button>
-        <button class="btn mx-1 run" mat-button color="primary">Folder</button>
+        <button class="btn mx-1 back" mat-button color="warn" (click)="back()">Back</button>
+        <button class="btn mx-1 run" mat-button color="primary" (click)="forward()">Folder</button>
     </mat-card-actions>
 </mat-card>

@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { DealsModule } from './deals/deals.module';
 import { CsComponent } from './cs/cs.component';
 import {MatCardModule} from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button';
@@ -21,6 +20,7 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { HcService } from './service/hc.service';
 import {FilesMbsComponent} from 'src/app/mbs/files-mbs/files-mbs.component';
 import {MatListModule} from '@angular/material/list';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +37,6 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatButtonModule,
     HttpClientModule,
-    DealsModule,
     MatCardModule,
     MatButtonModule,
     MatInputModule,

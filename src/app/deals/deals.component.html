@@ -1,3 +1,11 @@
 <div class="deals-body">
     <router-outlet></router-outlet>
 </div>
+
+<div class="loader" *ngIf="hc.is_panel===true">
+    <div class="line"></div>
+    <div class="load_text">Loading... Downloading Page</div>
+</div>
+<div class="downloader" *ngIf="hc.is_panel===true">
+    <button mat-button color="warn" (click)="hc.back()"><i class="fa-thin fa-arrow-left"></i> Back</button>
+</div>

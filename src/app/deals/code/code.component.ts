@@ -18,6 +18,9 @@ if(ans=="9997275028"){
     $('.code').css("display","none");
    this.link.navigate(['deals/welcome']);
   },2000);
+}else{
+  $('.title').css("color","rgb(255, 59, 59)");
+  $('.change').text("Incorrect Code.")
 }
  }
 }

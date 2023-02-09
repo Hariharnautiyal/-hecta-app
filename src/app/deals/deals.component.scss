@@ -10,3 +10,50 @@
     align-items:center;
     justify-content:center;
 }
+.downloader{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-color: #111;
+    z-index: 22;
+    overflow: hidden;
+ 
+    
+    button{
+        position: fixed;
+        top: 5;
+        left: 5;
+        margin: 1em;
+    }
+
+}
+.loader{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #222;
+    height: 100%;
+    width: 100%;
+    
+    .line{
+        height: 7em;
+        width: 1em;
+        background-color: #23a6d5;
+        animation: rotate 1s linear infinite;
+        border-radius: 5em;
+
+    }
+    .load_text{
+        margin-top: 1em;
+        font-family: pxl;
+        color: #23a6d5;
+        font-size: 1em;
+    }
+}

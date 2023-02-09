@@ -1,5 +1,12 @@
-<mat-nav-list *ngFor="let folder of folders">
-    <a mat-list-item>
-        <span mat-line><i class="fa-thin fa-folder"></i> {{folder.name}}</span>
+
+<button mat-button color="primary" *ngIf="filemode===true" (click)="back()"><i class="fa-thin fa-arrow-left"></i> Back
+</button>
+<mat-nav-list *ngFor="let folder of list">
+    <a mat-list-item (click)="files(folder)" *ngIf="filemode===false">
+        <span mat-line><i class="fa-thin fa-folder"></i> {{folder.name}}</span><br>
+        <span mat-line class="sub-line">{{folder.files.length}} items</span>
       </a>
+    <a mat-list-item (click)="download(folder.link)" *ngIf="filemode===true">
+        <span mat-line><i class="fa-thin fa-{{folder.icon}}"></i> {{folder.name}} <i class="fa-thin fa-download" style="float:right; color: aquamarine;"> {{folder.size}} mb</i></span>
+    </a>
   </mat-nav-list>

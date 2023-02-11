@@ -1,19 +1,22 @@
 .code{
-    border:0;
-    transform: rotateY(180deg);
-    animation: comp-chg 2s ease-in forwards;
-    margin:auto;
-    color: #fff;
-font-family:rwl;
-background:#222;
-opacity:0.8;
-padding:15px;
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%) rotateY(180deg);
+    font-family:rwl;
+
 .title{
     font-family:rwl;
     color:#fff;
 }
 .field{
-    
+    margin-top: 2em;
 }
 }
 .logo{

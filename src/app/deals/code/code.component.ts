@@ -13,14 +13,9 @@ constructor(public link:Router){
 doned(ans:string | undefined){
  if(ans!=undefined){
 if(ans=="9997275028"){
-  $('.code').css("animation","logo-rt-fd 2s ease-in forwards");
-  setTimeout(()=>{
-    $('.code').css("display","none");
+
    this.link.navigate(['deals/welcome']);
-  },2000);
-}else{
-  $('.title').css("color","rgb(255, 59, 59)");
-  $('.change').text("Incorrect Code.")
+
 }
  }
 }

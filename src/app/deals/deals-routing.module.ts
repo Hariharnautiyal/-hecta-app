@@ -15,7 +15,8 @@ path:"",redirectTo:"code",pathMatch:'full'
 },
 {
   path:'files',component:FilesComponent
-}
+},
+
 ];
 
 @NgModule({

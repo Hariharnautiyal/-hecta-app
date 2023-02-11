@@ -7,6 +7,7 @@ import {DealsRoutingModule} from 'src/app/deals/deals-routing.module';
 import { CodeComponent } from './deals/code/code.component';
 import { WelcomeComponent } from './deals/welcome/welcome.component';
 import {FilesComponent} from './deals/files/files.component';
+import { ChannelComponent } from './deals/channel/channel.component';
 const routes: Routes = [
   {
 path:'',redirectTo:'cs',pathMatch:'full'
@@ -31,6 +32,9 @@ path:'',redirectTo:'cs',pathMatch:'full'
     },
     {
       path:'files',component:FilesComponent
+    },
+    {
+      path:'channel',component:ChannelComponent
     }
     ]
   },

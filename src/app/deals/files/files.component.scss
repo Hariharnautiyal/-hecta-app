@@ -1,15 +1,9 @@
 .card {
     transform: rotateY(180deg);
     animation: comp-chg 2s ease-in forwards;
-    border: 0;
-    margin: auto;
-    color: #fff;
     font-family: rwl;
-    background: #222;
     opacity: 0;
-    padding: 15px;
-    height: 100%;
-    width:100%;
+
 
     .title {
         font-family: rwl;

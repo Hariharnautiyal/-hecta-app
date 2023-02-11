@@ -20,6 +20,7 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { HcService } from './service/hc.service';
 import {FilesMbsComponent} from 'src/app/mbs/files-mbs/files-mbs.component';
 import {MatListModule} from '@angular/material/list';
+import { ChannelComponent } from './deals/channel/channel.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {MatListModule} from '@angular/material/list';
     WelcomeComponent,
     FilesComponent,
     DealsComponent,
-    FilesMbsComponent
+    FilesMbsComponent,
+    ChannelComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

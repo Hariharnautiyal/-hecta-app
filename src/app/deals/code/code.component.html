@@ -1,23 +1,12 @@
 
-<mat-card class="code">
-        <mat-card-header>
-            <mat-card-title class="title">
-                Verification.
-            </mat-card-title >
-            <mat-card-subtitle class="title change">
-Please tell use code you have
-            </mat-card-subtitle>
-        </mat-card-header>
+<div class="display-5">
+    <i class="fa-thin fa-lock"> Locked</i>
+</div>
         <mat-divider></mat-divider>
-        <mat-card-content class="content">
+    <mat-form-field appearance="fill" class="field" color="primary">
+        <mat-label>Enter Code</mat-label>
+        <input matInput placeholder="ex- 123-456-789" [(ngModel)]="code" required MatFormFieldControl="flflf">
+      </mat-form-field><br>
+   <button mat-flat-button color="primary" (click)="doned(code)"><i class="fa-thin fa-key"> Enter</i></button>
 
-            <mat-form-field appearance="fill" class="field my-3" color="primary">
-                <mat-label>Enter Code</mat-label>
-                <input matInput placeholder="ex- 123-456-789" [(ngModel)]="code" required MatFormFieldControl="flflf">
-              </mat-form-field>
-        </mat-card-content>
-        <mat-card-actions>
-           <button mat-raised-button class="btn mx-1">Cancel</button>
-           <button mat-raised-button class="btn mx-1" (click)="doned(code)">Done</button>
-        </mat-card-actions>
-</mat-card>
+

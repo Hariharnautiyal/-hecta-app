@@ -1,26 +1,22 @@
-<mat-card class="card">
+
     <mat-card-header>
-        <mat-card-subtitle class="title">
-            For Ashwin
-        </mat-card-subtitle>
-        <mat-card-title class="title">
-            Thanks !
-        </mat-card-title>
+   <div class="display-5"><i class="fa-thin fa-dollar"> Welcome</i></div>
+   <div class="lead">Ashwin</div>
 
     </mat-card-header>
-    <p>Thanks for puschasing our package.</p>
     <mat-divider></mat-divider>
-    <mat-card-content class="btn list-folders" (click)="forward()">
-        <i class="fa-thin fa-folder mx-2"></i> Downloads
-    </mat-card-content>
-    <mat-card-content class="btn list-folders">
-        <i class="fa-thin fa-dollar mx-2"></i> Product
-    </mat-card-content>
-    <mat-card-content class="btn list-folders">
-        <i class="fa-thin fa-video mx-2"></i> Channel
-    </mat-card-content>
+    <mat-nav-list>
+        <a mat-list-item routerLink="../files">
+            <span mat-line><i class="fa-thin fa-download"> Downloads</i></span>
+        </a>
+        <a mat-list-item>
+            <span mat-line><i class="fa-thin fa-box"> Your Product</i></span>
+        </a>
+        <a mat-list-item routerLink="../channel">
+            <span mat-line><i class="fa-thin fa-video"> Your Channel</i></span>
+        </a>
+    </mat-nav-list>
     <mat-card-actions>
-        <button class="btn mx-1 back" mat-button color="warn" (click)="back()">Back</button>
-        <button class="btn mx-1 run" mat-button color="primary" (click)="forward()">Folder</button>
+        <button class="btn mx-1 back" mat-flat-button color="warn" routerLink="../code">Back</button>
+        <button class="btn mx-1 run" mat-flat-button color="primary" (click)="forward()">Folder</button>
     </mat-card-actions>
-</mat-card>

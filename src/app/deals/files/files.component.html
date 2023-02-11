@@ -1,19 +1,20 @@
-<mat-card class="card">
-    <mat-card-header>
-        <mat-card-subtitle class="title">
-            Your Downloads here
-        </mat-card-subtitle>
-        <mat-card-title class="title">
-            Downloads
-        </mat-card-title>
 
-    </mat-card-header>
-    <mat-divider></mat-divider>
-    <mat-card-content class="btn list-folders" (click)="hc.files()">
-        <i class="fa-thin fa-folder mx-2" ></i> Phone
-    </mat-card-content>
+  <div class="display-5">
+    <i class="fa-thin fa-download"> Downloads</i>
+  </div>
+    
+    <mat-nav-list>
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLink="../files">
+            <span mat-line><i class="fa-thin fa-mobile"> For Phone</i></span>
+        </a>
+        <mat-divider></mat-divider>
+        <a mat-list-item>
+            <span mat-line><i class="fa-thin fa-desktop"> For Computer</i></span>
+        </a>
+        <mat-divider></mat-divider>
+    </mat-nav-list>
     <mat-card-actions>
-        <button class="btn mx-1 back" mat-button color="warn">Back</button>
-        <button class="btn mx-1 run" mat-button color="primary">Folder</button>
+        <button mat-flat-button color="warn" class="mx-1" routerLink="../welcome">Back</button>
+        <button mat-flat-button color="primary" class="mx-1">Folder</button>
     </mat-card-actions>
-</mat-card>

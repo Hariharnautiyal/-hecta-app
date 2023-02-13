@@ -20,7 +20,7 @@ export class data{
       icon:"tv",
       name:"T.C Games",
       size:50,
-      link:"https://harihar.ga"
+      link:"https://www.sigma-rt.com/en/tcgames/version/##"
     }
   ];
     public folders:folder[]=[
@@ -74,17 +74,6 @@ export class data{
                 icon:'whatsapp',
                 link:'sb'
               },
-            ]
-          },
-          {
-            name:'Game',
-            files:[
-              {
-                name:'Secret FF',
-                size:50,
-                icon:'gamepad',
-                link:'sb'
-              }
             ]
           },
           {

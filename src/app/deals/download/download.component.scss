@@ -1,0 +1,21 @@
+.line{
+    height: 5em;
+    width: 1em;
+    border-radius: 5px;
+    background: rgb(0, 149, 255);
+    animation: rotate 0.5s ease infinite;
+}
+.loading_dwn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .text{
+        font-family: pxl;
+        margin-top:1em ;
+        font-size: 1em;
+    }
+}

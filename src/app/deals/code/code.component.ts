@@ -16,7 +16,11 @@ if(ans=="9997275028"){
 
    this.link.navigate(['deals/welcome']);
 
+}else{
+  $('.lock').css("color","red");
 }
+ }else{
+  $('.lock').css("color","red");
  }
 }
 }

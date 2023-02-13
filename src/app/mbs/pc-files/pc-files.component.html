@@ -1,0 +1,5 @@
+<mat-nav-list *ngFor="let files of list">
+    <a mat-list-item (click)="download(files.link)">
+        <span mat-line><i class="fa-thin fa-{{files.icon}}"> {{files.name}}</i><i class="fa-thin fa-download" style="float:right; color: aquamarine;"> {{files.size}} mb</i></span>
+    </a>
+  </mat-nav-list>

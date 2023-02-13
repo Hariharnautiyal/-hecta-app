@@ -109,6 +109,7 @@
    height: 100%;
    width: 100%;
    overflow: hidden; 
+   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   }
   @media (max-width: 513px) {
     .content{
@@ -116,3 +117,24 @@
       height: 50%;
     }
   }
+.copyright{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index:33;
+  color: bisque;
+  font-size: 0.7em;
+  font-family: pxl;
+}
+.music{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 33;
+  color: bisque;
+  font-size: 1em;
+  font-family: pxl;
+}
+.aftereffect{
+  animation: hued 3s linear infinite;
+}

@@ -7,11 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prerender": "ng run project-name:prerender",
-    "dev:ssr": "ng run project-name:serve-ssr",
-    "build:ssr-prod": "ng build --configuration production && ng run project-name:server",
-    "build:ssr": "ng build --configuration development && ng run project-name:server",
-    "serve:ssr": "PORT=3333 node dist/project-name/server/main.js"
+    "prerender": "ng run hecta:prerender",
+    "dev:ssr": "ng run hecta:serve-ssr",
+    "build:ssr-prod": "ng build --configuration production && ng run hecta:server",
+    "build:ssr": "ng build --configuration development && ng run hecta:server",
+    "serve:ssr": "node dist/hecta/server/main.js"
   },
   "private": true,
   "dependencies": {

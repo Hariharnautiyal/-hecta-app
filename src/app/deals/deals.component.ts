@@ -8,8 +8,24 @@ import {HcService} from 'src/app/service/hc.service';
 export class DealsComponent {
   constructor(public hc:HcService){}
   link='http://localhost:4200';
+  permission:boolean = false;
+  music=new Audio;
   ngOninit(){
+  
+  }
+  ngAfterViewInit(){
+    this.music.src="./assets/zombue.mp3";
+    const x= this.music.load();
+    $(document).on("click",()=>{
+      if(this.permission==false){
+        const y=this.music.play();
+        $('.mic_text').text(" playing");
+        this.permission=true;
+      }
+    });
+
 
   }
-
+hover(){
+}
 }

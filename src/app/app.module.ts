@@ -21,7 +21,9 @@ import { HcService } from './service/hc.service';
 import {FilesMbsComponent} from 'src/app/mbs/files-mbs/files-mbs.component';
 import {MatListModule} from '@angular/material/list';
 import { ChannelComponent } from './deals/channel/channel.component';
-
+import { DownloadComponent } from './deals/download/download.component';
+import { ProductComponent } from './deals/product/product.component';
+import { PcFilesComponent } from './mbs/pc-files/pc-files.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,10 @@ import { ChannelComponent } from './deals/channel/channel.component';
     FilesComponent,
     DealsComponent,
     FilesMbsComponent,
-    ChannelComponent
+    ChannelComponent,
+    DownloadComponent,
+    ProductComponent,
+    PcFilesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

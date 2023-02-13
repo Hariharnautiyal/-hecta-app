@@ -5,11 +5,11 @@
     
     <mat-nav-list>
         <mat-divider></mat-divider>
-        <a mat-list-item routerLink="../files">
+        <a mat-list-item (click)="hc.files()">
             <span mat-line><i class="fa-thin fa-mobile"> For Phone</i></span>
         </a>
         <mat-divider></mat-divider>
-        <a mat-list-item>
+        <a mat-list-item (click)="hc.pc_files()">
             <span mat-line><i class="fa-thin fa-desktop"> For Computer</i></span>
         </a>
         <mat-divider></mat-divider>

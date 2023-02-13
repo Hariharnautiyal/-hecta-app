@@ -1,22 +1,28 @@
 import { Injectable } from '@angular/core';
 import {MatBottomSheet} from '@angular/material/bottom-sheet';
 import {FilesMbsComponent} from 'src/app/mbs/files-mbs/files-mbs.component';
-
+import {Router} from '@angular/router';
+import { PcFilesComponent } from '../mbs/pc-files/pc-files.component';
 @Injectable({
   providedIn: 'root'
 })
 export class HcService {
-
-  constructor(private mbs:MatBottomSheet) { }
+link:string;
+  constructor(private mbs:MatBottomSheet,public ink:Router) { }
   public files(){
-    console.log('clicked');
     this.mbs.open(FilesMbsComponent,{
       
         panelClass: 'btm'
     
     });
   }
-
+  public pc_files(){
+    this.mbs.open(PcFilesComponent,{
+      
+      panelClass: 'btm'
+  
+  });
+  }
   iframe_load:boolean =true;
 is_panel:boolean=false;
 is_panel_link:string;
@@ -25,24 +31,13 @@ if_loaded(){
   console.log("hecta is ready");
 }
 Download(link:string){
-  this.is_panel=true;
-  this.is_panel_link=link;
-  const htm=
-  `
-  <iframe src='`+link+`' frameborder="0" class="dwn_body"
-  style='
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  '
-  ></iframe>`
-  ;
-  $(htm).appendTo('.downloader');
-  $('.dwn_body').ready(()=>{
-    this.if_loaded();
-  });
+this.link=link;
+this.ink.navigate(['deals/download']);
 }
 back(){
   this.is_panel=false;
+}
+download(){
+window.location.href=this.link;
 }
 }

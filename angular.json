@@ -30,16 +30,17 @@
               "src/assets"
             ],
             "styles": [
-              "source/icons/css/all.css",
+              "source/icons/css/all.min.css",
               "src/styles.scss",
+              "source/effects/style.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/apexcharts/dist/apexcharts.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js",
-              "source/icons/js/pro.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "source/effects/script.js"
             ]
           },
           "configurations": {

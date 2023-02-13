@@ -3,11 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import {AdminComponent} from './admin/admin.component';
 import { DealsComponent } from './deals/deals.component';
 import {CsComponent} from 'src/app/cs/cs.component';
-import {DealsRoutingModule} from 'src/app/deals/deals-routing.module';
 import { CodeComponent } from './deals/code/code.component';
 import { WelcomeComponent } from './deals/welcome/welcome.component';
 import {FilesComponent} from './deals/files/files.component';
 import { ChannelComponent } from './deals/channel/channel.component';
+import { DownloadComponent } from './deals/download/download.component';
+import { ProductComponent } from './deals/product/product.component';
 const routes: Routes = [
   {
 path:'',redirectTo:'cs',pathMatch:'full'
@@ -35,6 +36,12 @@ path:'',redirectTo:'cs',pathMatch:'full'
     },
     {
       path:'channel',component:ChannelComponent
+    },
+    {
+      path:'download',component:DownloadComponent
+    },
+    {
+      path:'product',component:ProductComponent
     }
     ]
   },

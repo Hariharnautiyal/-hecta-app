@@ -15,6 +15,7 @@ export class DealsComponent {
   }
   ngAfterViewInit(){
     this.music.src="./assets/zombue.mp3";
+    this.music.loop= true;
     const x= this.music.load();
     $(document).on("click",()=>{
       if(this.permission==false){

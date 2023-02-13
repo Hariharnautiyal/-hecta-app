@@ -14,7 +14,7 @@ export class data{
       icon:"desktop",
       name:"Driver",
       size:20,
-      link:"https://harihar.ga"
+      link:"https://zebronics.info/driverszebronics7991/USB_Devices/ZEB-USB150WF/Realtek/ZEB-USB150WF%20Realtek.zip"
     },
     {
       icon:"tv",

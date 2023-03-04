@@ -1,59 +1,50 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import {AdminComponent} from './admin/admin.component';
-import { DealsComponent } from './deals/deals.component';
-import {CsComponent} from 'src/app/cs/cs.component';
-import { CodeComponent } from './deals/code/code.component';
-import { WelcomeComponent } from './deals/welcome/welcome.component';
-import {FilesComponent} from './deals/files/files.component';
-import { ChannelComponent } from './deals/channel/channel.component';
-import { DownloadComponent } from './deals/download/download.component';
-import { ProductComponent } from './deals/product/product.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { HomeComponent } from './components/home/home.component';
+import {
+  canActivate,
+  redirectUnauthorizedTo,
+  redirectLoggedInTo,
+} from '@angular/fire/auth-guard';
+import { ProfileComponent } from './components/profile/profile.component';
+
+const redirectToLogin = () => redirectUnauthorizedTo(['login']);
+const redirectToHome = () => redirectLoggedInTo(['home']);
+
 const routes: Routes = [
   {
-path:'',redirectTo:'cs',pathMatch:'full'
+    path: '',
+    pathMatch: 'full',
+    component: LoginComponent,
   },
   {
-    path: 'admin',
-    component:AdminComponent,
-    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+    path: 'login',
+    component: LoginComponent,
+    ...canActivate(redirectToHome),
   },
   {
-    path: 'deals',
-    component:DealsComponent,
-    children: [
-      {
-    path:"",redirectTo:"code",pathMatch:'full'
-      },
-    {
-      path:'code',component:CodeComponent
-    },
-    {
-      path:'welcome',component:WelcomeComponent
-    },
-    {
-      path:'files',component:FilesComponent
-    },
-    {
-      path:'channel',component:ChannelComponent
-    },
-    {
-      path:'download',component:DownloadComponent
-    },
-    {
-      path:'product',component:ProductComponent
-    }
-    ]
+    path: 'sign-up',
+    component: SignUpComponent,
+    ...canActivate(redirectToHome),
   },
   {
-  path:'cs',component:CsComponent
-  }
+    path: 'home',
+    component: HomeComponent,
+    ...canActivate(redirectToLogin),
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    ...canActivate(redirectToLogin),
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
-})],
-  exports: [RouterModule]
+  declarations: [],
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

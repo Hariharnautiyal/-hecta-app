@@ -2,50 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Hecta | HArihar </title>
+  <title>AngularChatApp</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<style>
-  .loader{
-    background: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999999999999999999;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-
-  }
-  .loader .text{
-font-family: l;
-font-size: 3em;
-animation:hued 1s linear infinite alternate;
-color: aquamarine;
-transition: 3s ease-in;
-  }
-
-</style>
-<body onload="loaded()">
-  <div class="loader" id="lod">
-<div class="text">Loading...</div>
-  </div>
-    <app-root></app-root>
-  
-  <script>
-function loaded(){
-  console.log('ready');
-  let x =document.getElementById("lod");
-  x.style.display="none";
-}
-  </script>
+<body class="mat-typography">
+  <app-root></app-root>
 </body>
-<noscript>
-  <h1>Hecta is una in is device</h1>
-</noscript>
 </html>

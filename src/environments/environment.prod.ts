@@ -1,12 +1,22 @@
 export const environment = {
   firebase: {
-    projectId: 'angular-chat-app-a96fc',
-    appId: '1:1092136299054:web:845d8dcb584510f1218dbf',
-    storageBucket: 'angular-chat-app-a96fc.appspot.com',
-    locationId: 'us-central',
-    apiKey: 'AIzaSyB17yTBT1WB-_vmUD4UVdUoNr9ECS5EbDY',
-    authDomain: 'angular-chat-app-a96fc.firebaseapp.com',
-    messagingSenderId: '1092136299054',
+  firebase: {
+apiKey: "AIzaSyAqu3-88917c199B-_ASZOYgkR5f73Dl_4",
+    
+authDomain: "chatwithharihar.firebaseapp.com",
+
+databaseURL: "https://chatwithharihar-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+projectId: "chatwithharihar",
+
+storageBucket: "chatwithharihar.appspot.com",
+
+messagingSenderId: "807318029739",
+
+appId: "1:807318029739:web:ee6a4a68e3052ce034feee",
+
+measurementId: "G-BJFNNCYMG6"
+  },
   },
   production: true
 };

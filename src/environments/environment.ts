@@ -4,6 +4,8 @@
 
 export const environment = {
   firebase: {
+apiKey: "AIzaSyAqu3-88917c199B-_ASZOYgkR5f73Dl_4",
+    
 authDomain: "chatwithharihar.firebaseapp.com",
 
 databaseURL: "https://chatwithharihar-default-rtdb.asia-southeast1.firebasedatabase.app",
@@ -29,6 +31,6 @@ measurementId: "G-BJFNNCYMG6"
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
-// apiKey: "AIzaSyAqu3-88917c199B-_ASZOYgkR5f73Dl_4",
+
 
 
